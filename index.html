@@ -1,1 +1,41 @@
-test
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire Événement</title>
+  <style>
+    body { font-family: Arial; max-width: 600px; margin: 2rem auto; }
+    label { display: block; margin-top: 1rem; }
+    input, textarea { width: 100%; padding: 0.5rem; }
+  </style>
+</head>
+<body>
+  <h1>Formulaire Événement</h1>
+
+  <form id="eventForm">
+    <label>Quantité de clients:
+      <input type="number" id="clients" required>
+    </label>
+
+    <label>Quantité de leaders:
+      <input type="number" id="leaders" required>
+    </label>
+
+    <label>Quantité de supports:
+      <input type="number" id="supports" required>
+    </label>
+
+    <div id="leadersInfo"></div>
+
+    <label>Restrictions alimentaires des invités:
+      <textarea id="diet"></textarea>
+    </label>
+
+    <button type="submit">Générer les liens</button>
+  </form>
+
+  <div id="output" style="margin-top:2rem;"></div>
+
+  <script src="form.js"></script>
+</body>
+</html>
